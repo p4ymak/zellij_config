@@ -579,7 +579,7 @@ plugins:
 # Options:
 #   - true
 #   - false (Default)
-simplified_ui: true
+# simplified_ui: true
 
 # Choose the path to the default shell that zellij will use for opening new panes
 # Default: $SHELL
@@ -599,14 +599,14 @@ theme: sonokai
 themes:
   sonokai:
     bg: "#2c2e34"
-    fg: "#e2e2e3"
-    red: "#fc5d7c"
+    fg: "#545862"
+    red: "#ff6000" # Orange
     green: "#9ed072"
     blue: "#76cce0"
     yellow: "#e7c664"
     magenta: "#ea76cb" # Pink CHANGE
-    orange: "#f39660" # Peach
-    cyan: "#8dd0b6" # Sky
+    orange: "#f39660" 
+    cyan: "#8dd0b6" 
     black: "#181819" # Text
     white: "#dce0e8" # Crust CHANGE
 
