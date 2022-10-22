@@ -600,7 +600,7 @@ themes:
   sonokai:
     bg: "#2c2e34"
     fg: "#545862"
-    red: "#ff6000" # Orange
+    red: "#000000" # Orange
     green: "#9ed072"
     blue: "#76cce0"
     yellow: "#e7c664"
