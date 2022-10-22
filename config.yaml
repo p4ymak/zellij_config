@@ -579,7 +579,7 @@ plugins:
 # Options:
 #   - true
 #   - false (Default)
-# simplified_ui: true
+simplified_ui: true
 
 # Choose the path to the default shell that zellij will use for opening new panes
 # Default: $SHELL
@@ -589,12 +589,26 @@ default_shell: fish
 # Options:
 #   - true (default)
 #   - false
-#pane_frames: true
+pane_frames: false
 
 # Choose the theme that is specified in the themes section.
 # For some examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 # Default: default
-theme: gruvbox-dark
+theme: sonokai
+
+themes:
+  sonokai:
+    bg: "#2c2e34"
+    fg: "#e2e2e3"
+    red: "#fc5d7c"
+    green: "#9ed072"
+    blue: "#76cce0"
+    yellow: "#e7c664"
+    magenta: "#ea76cb" # Pink CHANGE
+    orange: "#f39660" # Peach
+    cyan: "#8dd0b6" # Sky
+    black: "#181819" # Text
+    white: "#dce0e8" # Crust CHANGE
 
 # Choose the mode that zellij uses when starting up.
 # Default: normal
@@ -633,7 +647,7 @@ copy_command: "xclip -selection clipboard" # x11
 #copy_clipboard: primary
 
 # Enable or disable automatic copy (and clear) of selection when releasing mouse
-#copy_on_select: true
+copy_on_select: false
 
 # Path to the default editor to use to edit pane scrollbuffer
 scrollback_editor: /.cargo/bin/hx
