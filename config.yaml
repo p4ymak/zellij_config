@@ -43,8 +43,8 @@ keybinds:
         - action: [Resize: Decrease,]
           key: [ Alt: '-']
         # uncomment this and adjust key if using copy_on_select=false
-        # - action: [Copy: ]
-        #   key: [ Alt: 'c']
+        - action: [Copy: ]
+          key: [ Alt: 'c']
     locked:
         - action: [SwitchToMode: Normal,]
           key: [Ctrl: 'g',]
@@ -620,7 +620,7 @@ themes:
 # Options:
 #   - true (default)
 #   - false
-# mouse_mode: false
+mouse_mode: true
 
 # Configure the scroll back buffer size
 # This is the number of lines zellij stores for each pane in the scroll back
@@ -644,10 +644,10 @@ copy_command: "xclip -selection clipboard" # x11
 # Options:
 #   - system (default)
 #   - primary
-#copy_clipboard: primary
+copy_clipboard: primary
 
 # Enable or disable automatic copy (and clear) of selection when releasing mouse
-copy_on_select: false
+copy_on_select: true
 
 # Path to the default editor to use to edit pane scrollbuffer
 scrollback_editor: /.cargo/bin/hx
